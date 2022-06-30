@@ -1,0 +1,76 @@
+Answers for conceptual questions in Antra SEP C# Assignment 1
+
+Understanding Data Types
+
+1.
+a person's telephone number: string or int depending on usage of dashes
+a person's height: float
+a person's age: int
+a person's gender: string
+a person's salary: int
+a book's ISBN: string or int depending on usage of dashes
+a book's price: float
+a book's shipping weight: float
+a country's population: int
+number of stars in the universe: int
+number of employees in each of of the small businesses in the UK: int
+
+2. Value data types directly contain their data/information. Every value data type maintains
+a copy of its own data and operations on values can't affect each other. Reference data types
+store references to their data in the form of objects. Reference values don't contain the
+actual data and two reference values can reference the same object. Because of this an operation
+on one reference value can affect another reference value if it references the same object.
+Boxing is the process of storing a value typed piece of data inside an object, thereby becoming
+a referenced type. Unboxing is the process of extracting the valued data contained within
+a referenced object.
+
+3. Managed resources vs. unmanaged resources in .NET refers to what is controlled
+by the garbage collector which manages the allocation and release of memory in use by applications.
+Managed resources are directly controlled by the garbage collector and developers don't need
+to perform memory management tasks when writing code utilizing said resources. Conversely,
+writing code using unmanaged resources means the developer will have to include memory management
+tasks in their code.
+
+4. The garbage collector is responsible for allocating memory to be used by applications and
+releasing memory used by active applications when they are terminated.
+
+Controlling Flow and Converting Types
+
+1. You cannot divide an int variable by zero. It is considered a syntax error and the code
+won't compile.
+
+2. Dividing a double variable by zero yields a value of positive infinity.
+
+3. When you overflow an int variable, its value rolls over to its minimum value and starts
+incrementing from that value instead.
+
+4. x=y++ will assign the initial value of y to the variable x and then increment variable y's
+value. x=++y will first increment the value of y and then set x's value to the new value of y
+
+5. Break when used inside of a loop will break out of a loop entirely and start executing
+the next segment of code immediately following the loop. Continue when used inside of a loop
+will break only the current iteration of the loop's execution. If the continue condition is
+met, the loop will stop and start from the top on the next iteration. Return when used inside
+of a loop will break not only the loop itself but whatever method is currently utilizing the
+loop.
+
+6. The three parts of a for loop are the initializer which initializes the counter variable
+to an initial value, the condition which specifies the condition under which the loop is
+allowed to execute, and the iterator which specifies how the counter variable is incremented
+after each loop iteration. None of them are required, although we do have to include the
+semicolons that separate the components. If the condition is not specified, the loop becomes
+infinite similar to many while loops.
+
+7. a single = assigns a value or reference to a variable. A double == is a boolean comparison
+operator used to compare two values and will return true if they are identical and false
+otherwise.
+
+8. for ( ; true ; ) will compile and run. However, since the condition is always true, this
+loop will run indefinitely.
+
+9. In a switch statement, the underscore _ represents a default case for the switch. If none
+of the other case conditions are true, the switch defaults to whatever code is written for
+the _ condition.
+
+10. Any objecting implementing the IEnumerable interface can use foreach. This includes Arrays,
+ArrayLists, Lists, Hashtables, Dictionaries, and others.
