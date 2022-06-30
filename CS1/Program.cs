@@ -12,8 +12,3 @@ cs1.Birthday();
 cs1.Greeting();
 cs1.Print24();*/
 
-cs1.DisplayTypeInfo();
-int x = 2147483647;
-x++;
-
-Console.WriteLine(x);
